@@ -50,18 +50,18 @@ local function main()
         local function loopCallback(sender)
             cclog("loopCallback entered!")
             local start = currentTime:getCurrentTime()
-            -- print(start)
 
             local i = 0
             while i < N_Loop do
                 i = i + 1
-                cclog("Count: " .. i)
+
             end
 
             local stop = currentTime:getCurrentTime()
             local duration = stop - start
-
+            cclog("i = " .. i)
             cclog("start: " .. start .. " end: " .. stop .. " duration: " .. duration)
+
         end
 
         local function callfuncCallback(sender)
